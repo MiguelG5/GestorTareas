@@ -1,0 +1,11 @@
+  .background-image {
+    background-image: url('https://imgs.search.brave.com/gtaNO43S-C1av23kXbz_XDoUyKCmucLBq5-n8cO0LeE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9ibG9n/Lmh1YnNwb3QuZXMv/aHViZnMvbWVkaWEv/dGhlbmV3eW9ya3Rp/bWVzLmpwZWc');
+    background-size: contain;
+    background-position: top;
+    min-height: 400px; /* Ajusta la altura según tu necesidad */
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  

@@ -1,0 +1,92 @@
+.botto{
+margin-right: 10px;
+}
+.titu{
+    margin-left: 5px;
+}
+.botoni{
+    margin-left: 10px;
+}
+body {
+    background-color: white; /* Fondo blanco */
+  }
+  
+ /* Navbar Rojo */
+nav.navbar {
+    background-color: #FF0000 !important; /* Rojo */
+    color: #FFFFFF; /* Texto blanco */
+  }
+  
+  
+  .card {
+    background-color: #ff6666; /* Rojo más intenso para las tarjetas */
+  }
+  
+  .card:hover {
+    background-color: #ff3333; /* Nuevo color de fondo al pasar el ratón sobre la tarjeta */
+  }
+  
+  
+  
+  .card-title {
+    color: #ffffff; /* Texto blanco para el título de la tarjeta */
+  }
+  
+  .card-body {
+    color: #333; /* Texto oscuro para el contenido de la tarjeta */
+  }
+  
+  button.btn-primary {
+    background-color: #ffffff !important; /* Negro */
+    color: #000000; /* Texto blanco */
+  }
+  
+  .btn-secondary {
+    background-color: #333; /* Gris oscuro para los botones secundarios */
+    border: 1px solid #333; /* Borde gris oscuro */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .btn-danger {
+    background-color: #ff0000; /* Rojo para los botones de peligro (delete) */
+    border: 1px solid #ff0000; /* Borde rojo */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .modal-content {
+    background-color: #fff; /* Fondo blanco para el contenido del modal */
+    color: #333; /* Texto oscuro */
+  }
+  
+  .modal-header {
+    background-color: #ff0000; /* Rojo para la cabecera del modal */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .modal-title {
+    color: #fff; /* Texto blanco para el título del modal */
+  }
+  
+  .botto {
+    background-color: #333; /* Gris oscuro para el botón Limpiar */
+    border: 1px solid #333; /* Borde gris oscuro */
+    color: #fff; /* Texto blanco */
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #FFFFFF; /* Texto blanco */
+    margin-left: 580px;
+  }
+  
+  /* Margen derecho para separar el texto del botón */
+  .navbar-brand + .btn-primary {
+    margin-right: 100px;
+  }
+  .moo{
+    background-color: #ff6666; /* Rojo más intenso para las tarjetas */
+
+  }

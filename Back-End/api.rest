@@ -1,0 +1,27 @@
+###
+GET http://localhost:4000/api/tareas
+###
+POST http://localhost:4000/api/tareas
+Content-Type: application/json
+
+{
+    "datosCompartidos": "Tarea de torres",
+    "tareaDatosEspecifico": "Programar el calendario",
+    "fechaTerminacion": "2023-12-01T20:30:00.000Z"
+}
+
+###
+GET http://localhost:4000/api/tareas/1
+
+###
+PUT http://localhost:4000/api/tareas/1
+Content-Type: application/json
+
+{
+    "datosCompartidos": "Examenes de Rubio",
+    "tareaDatosEspecifico": "Examenes de cisco",
+    "fechaTerminacion": "mañana"
+}
+
+###
+DELETE http://localhost:4000/api/tareas/3

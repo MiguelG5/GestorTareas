@@ -1,0 +1,69 @@
+<nav class="navbar bg-body-tertiary bg-dark">
+    <span class="titu navbar-brand mb-1 h1">BoxRoutines</span>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Crear Actividad
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Crear actividad</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="moo modal-body">
+            <div class="col-md-15">
+                <div class="card">
+                    <div class="card-body">
+                        <form #tareaForm="ngForm" (ngSubmit)="addTarea(tareaForm)">
+                            <input type="hidden" name="idActividad" [(ngModel)]="tareaServices.selectedTarea.idActividad">
+                            <input
+    type="text"
+    class="form-control"
+    name="datosCompartidos"
+    placeholder="Nombre de la tarea"
+    [(ngModel)]="tareaServices.selectedTarea.datosCompartidos"
+  />
+
+                            <br>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="tareaDatosEspecifico" placeholder="Informacion sobre la tarea" [(ngModel)]="tareaServices.selectedTarea.tareaDatosEspecifico">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="date" class="form-control" name="fechaTerminacion" value="2023-12-05" min="2023-12-05" max="2222-12-31" [(ngModel)]="tareaServices.selectedTarea.fechaTerminacion">                      
+                            </div>                      
+                            <br>
+                            <button class="botto btn btn-primary" (click)="resetForm(tareaForm)">Limpiar</button>
+                            <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container p-4">
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div *ngFor="let tarea of tareaServices.tareas" class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">{{tarea.datosCompartidos}}</h5>
+                        <p class="card-text">{{tarea.tareaDatosEspecifico}}</p>
+                        <p class="card-text"><strong>Fecha de creación:</strong> {{tarea.fechaCreacion | date:"dd-MM-yyyy"}}</p>
+                        <p class="card-text"><strong>Fecha límite:</strong> {{tarea.fechaTerminacion}}</p>
+                        <button class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="editTarea(tarea)"><i class="material-icons">edit</i></button>
+                        <button class="btn btn-sm btn-danger" (click)="tarea.idActividad !== undefined ? deleteTarea(tarea.idActividad) : null"><i class="material-icons">delete</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
