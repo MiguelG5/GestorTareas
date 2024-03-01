@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbarinicio',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbarinicio.component.css']
 })
 export class NavbarinicioComponent {
+  isTransparent: boolean = true;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isTransparent = (window.pageYOffset || document.documentElement.scrollTop) < 400;
+  }
 }

@@ -1,4 +1,7 @@
 .navbar {
-    background-color: transparent !important;
-  }
-  
+  transition: background-color 0.5s ease;
+}
+
+.white-bg {
+  background-color: white !important;
+}

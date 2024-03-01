@@ -90,3 +90,6 @@ nav.navbar {
     background-color: #ff6666; /* Rojo más intenso para las tarjetas */
 
   }
+  .breadcrumb{
+    margin-left: 600px;
+  }

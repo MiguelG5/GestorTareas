@@ -1,5 +1,5 @@
   .background-image {
-    background-image: url('https://imgs.search.brave.com/gtaNO43S-C1av23kXbz_XDoUyKCmucLBq5-n8cO0LeE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9ibG9n/Lmh1YnNwb3QuZXMv/aHViZnMvbWVkaWEv/dGhlbmV3eW9ya3Rp/bWVzLmpwZWc');
+    background-image: url('https://imgs.search.brave.com/nwm4dAGSZeeX8CglEJPeTzcqTSe63FTyahHC1SN6vwQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9ibG9n/LnN0cnVjdHVyYWxp/YS5jb20vaHViZnMv/YnVzaW5lc3MtdGVh/bS1tZWV0aW5nLXBy/ZXNlbnQtcHJvZmVz/c2lvbmFsLWludmVz/dG9yLXdvcmtpbmct/d2l0aC1uZXctc3Rh/cnR1cC1wcm9qZWN0/LWZpbmFuY2UtbWFu/YWdlcnNfdDIwX3lu/UGFkcCUyMCgxKSUy/MCgxKS5qcGc');
     background-size: contain;
     background-position: top;
     min-height: 400px; /* Ajusta la altura según tu necesidad */
@@ -8,4 +8,6 @@
   .content {
     padding: 20px;
   }
-  
+  .breadcrumb{
+    margin-left: 650px;
+  }
